@@ -3,15 +3,6 @@ font-size: 14px;
 line-height: 1.5;
 }
 
-a{
-    color: #2D9CDB
-    text-decoration: none;
-}
-
-a:hover{
-    color: #CCC
-    text-decoration: none;
-}
 
 /*header*/
 header{
@@ -42,6 +33,16 @@ header p{
 
 }
 
+.profile a{
+    color: #2D9CDB
+    text-decoration: none;
+}
+
+.profile a:hover{
+    color: #CCC
+    text-decoration: none;
+}
+
 .profile h2{
     margin-top: 80px;
     font-size: 36px;
@@ -62,6 +63,8 @@ header p{
     height: 678px;
     padding-top: 80px;
     background-color: #f4f4f4;
+    align-items: center;
+    background-size: cover;
 
 }
 
@@ -75,6 +78,8 @@ header p{
 }
 
 .works_line{
+
+    align-items: center;
     width: 970px;
     display: flex;
     justify-content: space-between;
@@ -86,16 +91,16 @@ header p{
 }
 
 .cg{
+    align-items: center;
     text-align: center;
     width: 198px;
-
-
 }
 
 .graphic h3{
     font-size: 24px;
 }
 .graphic{
+    align-items: center;
     text-align: center;
     width: 279px;
 
@@ -104,6 +109,7 @@ header p{
     font-size: 24px;
 }
 .programming{
+    align-items: center;
     text-align: center;
     width: 196px;
 
