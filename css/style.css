@@ -3,6 +3,16 @@ font-size: 14px;
 line-height: 1.5;
 }
 
+a{
+    color: #2D9CDB
+    text-decoration: none;
+}
+
+a:hover{
+    color: #CCC
+    text-decoration: none;
+}
+
 /*header*/
 header{
     width: 100%;
@@ -32,27 +42,70 @@ header p{
 
 }
 
-main h1{
+.profile h2{
+    margin-top: 80px;
     font-size: 36px;
-
+}
+.profile p{
+    font-size: 14px;
 }
 
 .profile{
     width: 481px;
-    margin: 0 auto 30px;
+    margin: 0 auto 100px;
     text-align: center;
 }
+
 
 .works{
     width: 100%;
     height: 678px;
-    padding-top: 30px;
+    padding-top: 80px;
+    background-color: #f4f4f4;
+
+}
+
+.works h2{
+    font-size: 36px;
     text-align: center;
 }
 
+.works p{
+    text-align: center;
+}
+
+.works_line{
+    width: 970px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.cg h3{
+    font-size: 24px;
+}
+
 .cg{
+    text-align: center;
     width: 198px;
+
+
+}
+
+.graphic h3{
+    font-size: 24px;
 }
 .graphic{
+    text-align: center;
     width: 279px;
+
+}
+.programming h3{
+    font-size: 24px;
+}
+.programming{
+    text-align: center;
+    width: 196px;
+
+
 }
