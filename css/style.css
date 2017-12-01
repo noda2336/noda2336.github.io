@@ -36,6 +36,7 @@ header p{
 @media(max-width:720px){
     .header-bg{
         background-color: rgba(255,0,0,0.5);
+        background-position:
     }
 }
 
@@ -58,9 +59,17 @@ header p{
 }
 
 .profile{
-    width: 481px;
-    margin: 0 auto 100px;
-    text-align: center;
+    width: 100%;
+    padding: 72px;
+        text-align: center;
+
+}
+@media(max-width:750px){
+    .profile{
+        width: 100%;
+        padding: 72px 16px;
+        box-sizing: border-box;/*paddingが加算されなくなる*/
+    }
 }
 
 
@@ -89,6 +98,7 @@ header p{
     justify-content: space-between;
     margin: 0 auto;
 }
+
 
 .cg h3{
     font-size: 24px;
@@ -122,6 +132,8 @@ header p{
     .works_line{
         width:100%;
         display:block;
+        padding: 72px 16px;
+        box-sizing: border-box;
     }
     .works_line section{
         width: 100%;
