@@ -139,3 +139,15 @@ header p{
         width: 100%;
     }
 }
+footer{
+    width: 100%;
+    padding: 72px;
+        text-align: center;
+}
+@media(max-width:750px){
+    footer{
+        width: 100%;
+        padding: 72px 16px;
+        box-sizing: border-box;/*paddingが加算されなくなる*/
+    }
+}
