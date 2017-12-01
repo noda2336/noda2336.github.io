@@ -30,7 +30,13 @@ header h1{
 header p{
     text-align: center;
     font-family: 'VT323', monospace;
+}
 
+/*header*/
+@media(max-width:720px){
+    .header-bg{
+        background-color: rgba(255,0,0,0.5);
+    }
 }
 
 .profile a{
