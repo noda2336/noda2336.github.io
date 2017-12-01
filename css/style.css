@@ -66,7 +66,6 @@ header p{
 
 .works{
     width: 100%;
-    height: 678px;
     padding-top: 80px;
     background-color: #f4f4f4;
     align-items: center;
@@ -84,7 +83,6 @@ header p{
 }
 
 .works_line{
-
     align-items: center;
     width: 970px;
     display: flex;
@@ -118,6 +116,14 @@ header p{
     align-items: center;
     text-align: center;
     width: 196px;
+}
 
-
+@media(max-width:750px){
+    .works_line{
+        width:100%;
+        display:block;
+    }
+    .works_line section{
+        width: 100%;
+    }
 }
