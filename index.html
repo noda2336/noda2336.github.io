@@ -27,7 +27,11 @@
     var diameter = [];//円の直径
     var colors = [];//色
     var NUM = 100;//配列の数
+    var img;
 
+    function preload(){
+        img = loadImage("img/main.png");
+    }
 
     function setup(){
         //sizeと同じ
@@ -50,6 +54,7 @@
     }
     function draw(){
         background(0);
+        image(img,0,0);//画像の表示
         noStroke();
         for(var i=0; i<NUM; i++){
             fill(colors[i]);
