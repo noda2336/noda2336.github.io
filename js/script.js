@@ -14,7 +14,6 @@ var img;
 function preload(){
     img = loadImage("img/main.png");
 }
-
 function setup(){
     //sizeと同じ
     var canves = createCanvas(windowWidth,600);
