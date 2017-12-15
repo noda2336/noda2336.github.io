@@ -51,6 +51,7 @@ function draw(){
     //画像の表示 後ろは幅と高さ
     image(img,0,0,scaleImgW,scaleImgH);
     noStroke();
+    imgResize();
     for(var i=0; i<NUM; i++){
         fill(colors[i]);
         ellipse(posX[i],posY[i],diameter[i],diameter[i]);
@@ -67,6 +68,10 @@ function draw(){
 function windowResized(){
     console.log(`拡大縮小`);
     resizeCanvas(windowWidth,600);
+    imgResize();
+}
+
+function imgResize(){
     if(windowWidth > defaultImgW){
     //画像の幅をウィンドー幅に合わせる
     scaleImgW = windowWidth;
