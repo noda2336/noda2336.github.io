@@ -67,6 +67,8 @@ function draw(){
 function windowResized(){
     console.log(`拡大縮小`);
     resizeCanvas(windowWidth,600);
+    //画像の幅をウィンドー幅に合わせる
+    scaleImgW = windowWidth;
 }
 
 /*//グローバル変数
