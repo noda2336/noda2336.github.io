@@ -35,7 +35,7 @@ header p{
 /*header*/
 @media(max-width:720px){
     .header-bg{
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255,0,0,0.5);
         background-position:
     }
 }
@@ -60,8 +60,10 @@ header p{
 
 .profile{
     width: 100%;
-    padding: 72px;
+    padding-top: 20px;
+    padding-bottom: 20px;
         text-align: center;
+
 
 }
 @media(max-width:750px){
@@ -141,7 +143,6 @@ header p{
 }
 footer{
     width: 100%;
-    padding: 72px;
         text-align: center;
 }
 @media(max-width:750px){
