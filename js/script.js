@@ -8,12 +8,13 @@ var speedX = [];
 var speedY = [];
 var diameter = [];//円の直径
 var colors = [];//色
-var NUM = 100;//配列の数
+var NUM = 50;//配列の数
 var img;
 
 function preload(){
     img = loadImage("img/main.png");
 }
+
 function setup(){
     //sizeと同じ
     var canves = createCanvas(windowWidth,600);
@@ -25,15 +26,16 @@ function setup(){
         diameter[i] = random(20,80);
         colors[i] = color(random(360),100,100,50);
         posX[i] = width/2;
-        speedX[i] = random(-4,4);
+        speedX[i] = random(-2,2);
         posY[i] = height/2;
-        speedY[i] = random(-4,4);
+        speedY[i] = random(-2,2);
     }
     /*fill(255,0,0);
     rect(100,100,100,100);
     stroke(255,0,0);
     line(0,0,width,height);*/
 }
+
 function draw(){
     background(0);
     image(img,0,0);//画像の表示
