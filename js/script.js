@@ -69,6 +69,8 @@ function windowResized(){
     resizeCanvas(windowWidth,600);
     //画像の幅をウィンドー幅に合わせる
     scaleImgW = windowWidth;
+    //画像の高さを伸びた幅に合わせて変化させる
+    scaleImgH = windowWidth / defaultRatio;
 }
 
 /*//グローバル変数
