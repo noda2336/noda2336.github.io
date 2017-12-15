@@ -67,6 +67,7 @@ function draw(){
 function windowResized(){
     console.log(`拡大縮小`);
     resizeCanvas(windowWidth,600);
+    if(windowWidth > defaultImgW)
     //画像の幅をウィンドー幅に合わせる
     scaleImgW = windowWidth;
     //画像の高さを伸びた幅に合わせて変化させる
