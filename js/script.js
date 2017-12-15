@@ -16,7 +16,10 @@ var defaultImgW = 1284;
 var defaultImgH = 600;
 //元画像の比率
 var defaultRatio = defaultImgW/ defaultImgH;
-console.log(defaultRatio);
+//拡大縮小後の幅と高さ　数値は変化するので入れなくてもよい
+//初期値として最初の値を入れる
+var scaleImgW = defaultImgW;
+var scaleImgH = defaultImgH;
 
 function preload(){
     img = loadImage("img/main.png");
@@ -44,8 +47,9 @@ function setup(){
 }
 
 function draw(){
-    background(0);
-    image(img,0,0);//画像の表示
+    background(255);
+    //画像の表示 後ろは幅と高さ
+    image(img,0,0,scaleImgW,scaleImgH);
     noStroke();
     for(var i=0; i<NUM; i++){
         fill(colors[i]);
