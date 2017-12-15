@@ -9,7 +9,14 @@ var speedY = [];
 var diameter = [];//円の直径
 var colors = [];//色
 var NUM = 50;//配列の数
+//画像を保存する変数
 var img;
+//元画像の幅と高さ
+var defaultImgW = 1284;
+var defaultImgH = 600;
+//元画像の比率
+var defaultRatio = defaultImgW/ defaultImgH;
+console.log(defaultRatio);
 
 function preload(){
     img = loadImage("img/main.png");
