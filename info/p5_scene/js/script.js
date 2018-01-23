@@ -7,6 +7,8 @@ var diameter = []; //円の直径
 var colors = []; //色
 var NUM = 100; // 配列の数
 var angle = 0;
+var n = 0;
+var count = 1;
 
 
 //シーンの切り替え
@@ -60,7 +62,9 @@ console.log(scene);
     noStroke();
     if(scene == 0){
     //1つ目の円
-    scale(0.5);
+    scale(0.6);
+    push();
+    translate(0,-50);
     for (var i = 0; i<5; i++) {
      push();
      translate(0+400, (i+1)*100-16);
@@ -99,13 +103,16 @@ console.log(scene);
      vertex(922, 451);
      endShape(CLOSE);
      pop();
+
     }
-}else if(scene == 1){
+    pop();
+}
+else if(scene == 1){
     //drawVertex(startAngle,vertexNum)
     //2つ目の円
-    scale(0.5);
+    scale(0.7);
     push();
-    translate(400,150);
+    translate(200,0);
     //rotate(radians(startAngle + (angle/vertexNum)));
     fill('#7A428B');
   noStroke();
@@ -133,10 +140,15 @@ console.log(scene);
   pop();
   //angle += 0.1;
 }else if(scene == 2){
+
+    //if (n > 250 || n <0) {//250まで来たら折り返し0までカウント
+   //count = -count;
+ //}
+ //n = n + count;
     //3つ目の円
-    scale(0.5);
+    scale(0.7);
     push();
-    translate(400,100);
+    translate(200,-50);
     fill('#169597');
       noStroke();
       beginShape();
