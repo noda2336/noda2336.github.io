@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* common ---------------------- */
+body {
+    color: #2c2c2c;
+    font-size: 14px;
+}
+#defaultCanvas0{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100vh;
+}
+
+/* header ------------------------*/
+#page-header{
+    height: 100vh;
+    background-color: #999;
+}
+
+.site-id{
+    position: absolute;
+    left: 70px;
+    top: 20px;
+    z-index: 10;
+}
+.site-id a{
+    font-size: 36px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.tex{
+    position: absolute;
+    left: 70px;
+    top: 60px;
+    z-index: 10;
+}
+
+.tex p{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#page-header nav ul{
+    position: absolute;
+    left: 70px;
+    top: 150px;
+    z-index: 10;
+}
+#page-header nav ul li{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
