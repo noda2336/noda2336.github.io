@@ -62,6 +62,7 @@ function setup(){
 
 
 function draw(){
+    image(img,0,0,1240,600);
 
 
 console.log(scene);
@@ -69,10 +70,10 @@ console.log(scene);
     background('#D8CCB7');
 
     noStroke();
-    if(scene == 3){
-        image(img,0,0,1240,600);
-    }
-    else if(scene == 0){
+
+
+
+    if(scene == 0){
     //1つ目の円
     scale(0.6);
     push();
