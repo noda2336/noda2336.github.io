@@ -21,7 +21,7 @@ var btnB;
 var btnC;
 
 function preload(){
-    img = loadImage("img/front01.png");
+    img = loadImage("../img/front01.png");
 }
 
 function setup(){
