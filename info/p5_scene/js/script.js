@@ -62,7 +62,7 @@ function setup(){
 
 
 function draw(){
-    image(img,0,0,1240,600);
+    image(img,0,0,1055,1024);
 
 
 console.log(scene);
@@ -162,7 +162,7 @@ else if(scene == 1){
     scale(0.7);
     push();
     translate(200,-50);
-    fill('#169597,n');
+    fill('#169597',n);
       noStroke();
       beginShape();
       vertex(749.14, 286);
@@ -171,7 +171,7 @@ else if(scene == 1){
       vertex(720, 316.84);
       endShape(CLOSE);
 
-      fill('#D58231,n*3');
+      fill('#D58231',n*3);
       noStroke();
       beginShape();
       vertex(810.79, 229);
@@ -180,7 +180,7 @@ else if(scene == 1){
       vertex(782, 255.84);
       endShape(CLOSE);
 
-      fill('#B80319,n*5');
+      fill('#B80319',n*5);
       noStroke();
       beginShape();
       vertex(868.54, 168.99);
@@ -189,7 +189,7 @@ else if(scene == 1){
       vertex(837.04, 199.83);
       endShape(CLOSE);
 
-      fill('#365183,n*7');
+      fill('#365183',n*7);
       noStroke();
       beginShape();
       vertex(916.47, 120);
@@ -198,7 +198,7 @@ else if(scene == 1){
       endShape(CLOSE);
 
       //
-      fill('#D58231,n');
+      fill('#D58231',n);
       noStroke();
       beginShape();
       vertex(1113, 317);
@@ -207,7 +207,7 @@ else if(scene == 1){
       vertex(1113, 708);
       endShape(CLOSE);
 
-      fill('#B80319,n*3');
+      fill('#B80319',n*3);
       noStroke();
       beginShape();
       vertex(1174, 379);
@@ -216,7 +216,7 @@ else if(scene == 1){
       vertex(1174, 644.26);
       endShape(CLOSE);
 
-      fill('#365183,n*5');
+      fill('#365183',n*5);
       noStroke();
       beginShape();
       vertex(1230.01, 434.04);
@@ -225,7 +225,7 @@ else if(scene == 1){
       vertex(1230.01, 590.94);
       endShape(CLOSE);
 
-      fill('#169597,n*7');
+      fill('#169597',n*7);
       noStroke();
       beginShape();
       vertex(1289, 496);
@@ -234,7 +234,7 @@ else if(scene == 1){
       endShape(CLOSE);
 
       //
-      fill('#B80319,n');
+      fill('#B80319',n);
       noStroke();
       beginShape();
       vertex(721, 708);
@@ -243,7 +243,7 @@ else if(scene == 1){
       vertex(751.12, 738.84);
       endShape(CLOSE);
 
-      fill('#365183,n*3');
+      fill('#365183',n*3);
       noStroke();
       beginShape();
       vertex(784.74, 769);
@@ -252,7 +252,7 @@ else if(scene == 1){
       vertex(807.56, 796.84);
       endShape(CLOSE);
 
-      fill('#169597,n*5');
+      fill('#169597',n*5);
       noStroke();
       beginShape();
       vertex(838.06, 825.01);
@@ -261,7 +261,7 @@ else if(scene == 1){
       vertex(867.56, 855.85);
       endShape(CLOSE);
 
-      fill('#D58231,n*7');
+      fill('#D58231',n*7);
       noStroke();
       beginShape();
       vertex(900, 886);
@@ -270,7 +270,7 @@ else if(scene == 1){
       endShape(CLOSE);
 
       //
-       fill('#365183,n');
+       fill('#365183',n);
       noStroke();
       beginShape();
       vertex(719.84, 317);
@@ -279,7 +279,7 @@ else if(scene == 1){
       vertex(689, 347.12);
       endShape(CLOSE);
 
-      fill('#169597,n*3');
+      fill('#169597',n*3);
       noStroke();
       beginShape();
       vertex(658.84, 380.74);
@@ -288,7 +288,7 @@ else if(scene == 1){
       vertex(632, 403.56);
       endShape(CLOSE);
 
-      fill('#D58231,n*5');
+      fill('#D58231',n*5);
       noStroke();
       beginShape();
       vertex(602.83, 434.06);
@@ -297,7 +297,7 @@ else if(scene == 1){
       vertex(571.99, 463.56);
       endShape(CLOSE);
 
-      fill('#B80319,n*7');
+      fill('#B80319',n*7);
       noStroke();
       beginShape();
       vertex(541.84, 496);
