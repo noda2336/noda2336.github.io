@@ -20,9 +20,9 @@ var btnA;
 var btnB;
 var btnC;
 
-/*function preload(){
+function preload(){
     img = loadImage("img/front01.png");
-}*/
+}
 
 function setup(){
     // size
@@ -70,7 +70,7 @@ console.log(scene);
 
     noStroke();
     if(scene == 3){
-        //image(img,0,0,1240,600);
+        image(img,0,0,1240,600);
     }
     else if(scene == 0){
     //1つ目の円
