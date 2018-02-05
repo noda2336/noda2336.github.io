@@ -9,7 +9,9 @@ var NUM = 100; // 配列の数
 var angle = 0;
 var n = 0;
 var count = 1;
-
+var img;
+var n = 0;
+var count =1;
 
 //シーンの切り替え
 var scene;
@@ -18,6 +20,9 @@ var btnA;
 var btnB;
 var btnC;
 
+/*function preload(){
+    img = loadImage("img/front01.png");
+}*/
 
 function setup(){
     // size
@@ -27,7 +32,7 @@ function setup(){
     colorMode(HSB, 360, 100, 100, 100);
 
 //最初のシーン
-    scene = 3;
+
     //ボタンをクリックしたら
     btnA = select('.btnA').mousePressed(function(){
         scene = 0;
@@ -39,7 +44,10 @@ function setup(){
         scene = 2;
     });
 
-    if(scene == 0){
+    if(scene == 3){
+
+    }
+    else if(scene == 0){
         //1つ目の絵
 
     } else if(scene == 1){
@@ -55,12 +63,16 @@ function setup(){
 
 function draw(){
 
+
 console.log(scene);
 
     background('#D8CCB7');
 
     noStroke();
-    if(scene == 0){
+    if(scene == 3){
+        //image(img,0,0,1240,600);
+    }
+    else if(scene == 0){
     //1つ目の円
     scale(0.6);
     push();
@@ -141,15 +153,15 @@ else if(scene == 1){
   //angle += 0.1;
 }else if(scene == 2){
 
-    //if (n > 250 || n <0) {//250まで来たら折り返し0までカウント
-   //count = -count;
- //}
- //n = n + count;
+    if (n > 250 || n <0) {//250まで来たら折り返し0までカウント
+   count = -count;
+ }
+ n = n + count;
     //3つ目の円
     scale(0.7);
     push();
     translate(200,-50);
-    fill('#169597');
+    fill('#169597,n');
       noStroke();
       beginShape();
       vertex(749.14, 286);
@@ -158,7 +170,7 @@ else if(scene == 1){
       vertex(720, 316.84);
       endShape(CLOSE);
 
-      fill('#D58231');
+      fill('#D58231,n*3');
       noStroke();
       beginShape();
       vertex(810.79, 229);
@@ -167,7 +179,7 @@ else if(scene == 1){
       vertex(782, 255.84);
       endShape(CLOSE);
 
-      fill('#B80319');
+      fill('#B80319,n*5');
       noStroke();
       beginShape();
       vertex(868.54, 168.99);
@@ -176,7 +188,7 @@ else if(scene == 1){
       vertex(837.04, 199.83);
       endShape(CLOSE);
 
-      fill('#365183');
+      fill('#365183,n*7');
       noStroke();
       beginShape();
       vertex(916.47, 120);
@@ -185,7 +197,7 @@ else if(scene == 1){
       endShape(CLOSE);
 
       //
-      fill('#D58231');
+      fill('#D58231,n');
       noStroke();
       beginShape();
       vertex(1113, 317);
@@ -194,7 +206,7 @@ else if(scene == 1){
       vertex(1113, 708);
       endShape(CLOSE);
 
-      fill('#B80319');
+      fill('#B80319,n*3');
       noStroke();
       beginShape();
       vertex(1174, 379);
@@ -203,7 +215,7 @@ else if(scene == 1){
       vertex(1174, 644.26);
       endShape(CLOSE);
 
-      fill('#365183');
+      fill('#365183,n*5');
       noStroke();
       beginShape();
       vertex(1230.01, 434.04);
@@ -212,7 +224,7 @@ else if(scene == 1){
       vertex(1230.01, 590.94);
       endShape(CLOSE);
 
-      fill('#169597');
+      fill('#169597,n*7');
       noStroke();
       beginShape();
       vertex(1289, 496);
@@ -221,7 +233,7 @@ else if(scene == 1){
       endShape(CLOSE);
 
       //
-      fill('#B80319');
+      fill('#B80319,n');
       noStroke();
       beginShape();
       vertex(721, 708);
@@ -230,7 +242,7 @@ else if(scene == 1){
       vertex(751.12, 738.84);
       endShape(CLOSE);
 
-      fill('#365183');
+      fill('#365183,n*3');
       noStroke();
       beginShape();
       vertex(784.74, 769);
@@ -239,7 +251,7 @@ else if(scene == 1){
       vertex(807.56, 796.84);
       endShape(CLOSE);
 
-      fill('#169597');
+      fill('#169597,n*5');
       noStroke();
       beginShape();
       vertex(838.06, 825.01);
@@ -248,7 +260,7 @@ else if(scene == 1){
       vertex(867.56, 855.85);
       endShape(CLOSE);
 
-      fill('#D58231');
+      fill('#D58231,n*7');
       noStroke();
       beginShape();
       vertex(900, 886);
@@ -257,7 +269,7 @@ else if(scene == 1){
       endShape(CLOSE);
 
       //
-       fill('#365183');
+       fill('#365183,n');
       noStroke();
       beginShape();
       vertex(719.84, 317);
@@ -266,7 +278,7 @@ else if(scene == 1){
       vertex(689, 347.12);
       endShape(CLOSE);
 
-      fill('#169597');
+      fill('#169597,n*3');
       noStroke();
       beginShape();
       vertex(658.84, 380.74);
@@ -275,7 +287,7 @@ else if(scene == 1){
       vertex(632, 403.56);
       endShape(CLOSE);
 
-      fill('#D58231');
+      fill('#D58231,n*5');
       noStroke();
       beginShape();
       vertex(602.83, 434.06);
@@ -284,7 +296,7 @@ else if(scene == 1){
       vertex(571.99, 463.56);
       endShape(CLOSE);
 
-      fill('#B80319');
+      fill('#B80319,n*7');
       noStroke();
       beginShape();
       vertex(541.84, 496);
