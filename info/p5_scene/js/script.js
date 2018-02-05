@@ -154,7 +154,7 @@ else if(scene == 1){
   //angle += 0.1;
 }else if(scene == 2){
 
-    else if (n > 250 || n <0) {//250まで来たら折り返し0までカウント
+    if (n > 250 || n <0) {//250まで来たら折り返し0までカウント
    count = -count;
  }
  n = n + count;
